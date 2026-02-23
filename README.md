@@ -1,16 +1,4 @@
-# API Docer Example: Stock Ticker App
-
-A simple TypeScript application with an Express API server and client that demonstrates api-docer's runtime capture capabilities. Perfect for testing api-docer's static analysis and runtime proxy.
-
-## Features
-
-- **Express API server** serving stock quotes via REST endpoints
-- **Client application** that fetches and displays stock data via HTTP requests
-- Real HTTP traffic that api-docer can capture and document
-- Formatted table output with color-coded price changes
-- Works with api-docer's proxy for automatic documentation generation
-
-## Prerequisites
+### Prerequisites
 
 - Node.js >= 18
 - npm
@@ -59,6 +47,16 @@ GOOGL     Alphabet Inc.                 USD 142.80      ↑ 1.25          0.88% 
 ## Using with API Docer
 
 To capture HTTP traffic with api-docer:
+
+> API CALL
+
+<img width="1026" height="595" alt="Screen Shot 2026-02-22 at 23 04 59" src="https://github.com/user-attachments/assets/e15a17d0-7282-45b2-9014-eeb6aa5aa406" />
+
+> Docer Listener
+
+<img width="868" height="108" alt="Screen Shot 2026-02-22 at 23 57 45" src="https://github.com/user-attachments/assets/274d64e1-2afe-4d3b-abb8-24ed3d382f9c" />
+
+
 
 **Terminal 1: Start the API server**
 ```bash
@@ -116,12 +114,3 @@ src/
 ├── server.ts    # Express API server with mock data
 └── index.ts     # Client application (makes HTTP requests)
 ```
-
-## Notes
-
-- The server serves mock stock data (not real-time)
-- Perfect for educational purposes and api-docer testing
-- Easy to modify endpoints and data for your own API docs
-- No external API keys required
-# API-Docer
-# API-Docer
