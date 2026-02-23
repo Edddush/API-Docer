@@ -1,0 +1,99 @@
+{
+  "apis": [
+    {
+      "baseUrl": "http://localhost:3000",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/stocks",
+          "pathNormalized": "/stocks",
+          "headers": {},
+          "requestSamples": [
+            {
+              "requestHeaders": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "axios/1.13.5",
+                "accept-encoding": "gzip, compress, deflate, br",
+                "host": "localhost:3000",
+                "connection": "keep-alive"
+              },
+              "statusCode": 200,
+              "responseHeaders": {
+                "x-powered-by": "Express",
+                "content-type": "application/json; charset=utf-8",
+                "content-length": "1517",
+                "etag": "W/\"5ed-udf/Kme/YWpowh0nKTIPYSMofNI\"",
+                "date": "Mon, 23 Feb 2026 04:28:43 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "responseBody": "{\"data\":[{\"symbol\":\"AAPL\",\"displayName\":\"Apple Inc.\",\"regularMarketPrice\":195.35,\"currency\":\"USD\",\"marketCap\":3020000000000,\"regularMarketChange\":2.15,\"regularMarketChangePercent\":1.11},{\"symbol\":\"GOOGL\",\"displayName\":\"Alphabet Inc.\",\"regularMarketPrice\":142.8,\"currency\":\"USD\",\"marketCap\":1780000000000,\"regularMarketChange\":1.25,\"regularMarketChangePercent\":0.88},{\"symbol\":\"MSFT\",\"displayName\":\"Microsoft Corporation\",\"regularMarketPrice\":423.5,\"currency\":\"USD\",\"marketCap\":3150000000000,\"regularMarketChange\":3.45,\"regularMarketChangePercent\":0.82},{\"symbol\":\"AMZN\",\"displayName\":\"Amazon.com Inc.\",\"regularMarketPrice\":180.75,\"currency\":\"USD\",\"marketCap\":1880000000000,\"regularMarketChange\":2.3,\"regularMarketChangePercent\":1.28},{\"symbol\":\"TSLA\",\"displayName\":\"Tesla Inc.\",\"regularMarketPrice\":238.9,\"currency\":\"USD\",\"marketCap\":756000000000,\"regularMarketChange\":-1.5,\"regularMarketChangePercent\":-0.62},{\"symbol\":\"META\",\"displayName\":\"Meta Platforms Inc.\",\"regularMarketPrice\":485.2,\"currency\":\"USD\",\"marketCap\":1240000000000,\"regularMarketChange\":5.1,\"regularMarketChangePercent\":1.06},{\"symbol\":\"NVDA\",\"displayName\":\"NVIDIA Corporation\",\"regularMarketPrice\":874.35,\"currency\":\"USD\",\"marketCap\":2150000000000,\"regularMarketChange\":12.45,\"regularMarketChangePercent\":1.44},{\"symbol\":\"AMD\",\"displayName\":\"Advanced Micro Devices\",\"regularMarketPrice\":167.5,\"currency\":\"USD\",\"marketCap\":271000000000,\"regularMarketChange\":-2.3,\"regularMarketChangePercent\":-1.35}],\"count\":8,\"timestamp\":\"2026-02-23T04:28:43.483Z\"}",
+              "timestamp": 1771820923495
+            },
+            {
+              "requestHeaders": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "axios/1.13.5",
+                "accept-encoding": "gzip, compress, deflate, br",
+                "host": "localhost:3000",
+                "connection": "keep-alive"
+              },
+              "statusCode": 200,
+              "responseHeaders": {
+                "x-powered-by": "Express",
+                "content-type": "application/json; charset=utf-8",
+                "content-length": "1517",
+                "etag": "W/\"5ed-Se5zhxDKp0VUekxzDZvS8JJq0l8\"",
+                "date": "Mon, 23 Feb 2026 04:30:37 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "responseBody": "{\"data\":[{\"symbol\":\"AAPL\",\"displayName\":\"Apple Inc.\",\"regularMarketPrice\":195.35,\"currency\":\"USD\",\"marketCap\":3020000000000,\"regularMarketChange\":2.15,\"regularMarketChangePercent\":1.11},{\"symbol\":\"GOOGL\",\"displayName\":\"Alphabet Inc.\",\"regularMarketPrice\":142.8,\"currency\":\"USD\",\"marketCap\":1780000000000,\"regularMarketChange\":1.25,\"regularMarketChangePercent\":0.88},{\"symbol\":\"MSFT\",\"displayName\":\"Microsoft Corporation\",\"regularMarketPrice\":423.5,\"currency\":\"USD\",\"marketCap\":3150000000000,\"regularMarketChange\":3.45,\"regularMarketChangePercent\":0.82},{\"symbol\":\"AMZN\",\"displayName\":\"Amazon.com Inc.\",\"regularMarketPrice\":180.75,\"currency\":\"USD\",\"marketCap\":1880000000000,\"regularMarketChange\":2.3,\"regularMarketChangePercent\":1.28},{\"symbol\":\"TSLA\",\"displayName\":\"Tesla Inc.\",\"regularMarketPrice\":238.9,\"currency\":\"USD\",\"marketCap\":756000000000,\"regularMarketChange\":-1.5,\"regularMarketChangePercent\":-0.62},{\"symbol\":\"META\",\"displayName\":\"Meta Platforms Inc.\",\"regularMarketPrice\":485.2,\"currency\":\"USD\",\"marketCap\":1240000000000,\"regularMarketChange\":5.1,\"regularMarketChangePercent\":1.06},{\"symbol\":\"NVDA\",\"displayName\":\"NVIDIA Corporation\",\"regularMarketPrice\":874.35,\"currency\":\"USD\",\"marketCap\":2150000000000,\"regularMarketChange\":12.45,\"regularMarketChangePercent\":1.44},{\"symbol\":\"AMD\",\"displayName\":\"Advanced Micro Devices\",\"regularMarketPrice\":167.5,\"currency\":\"USD\",\"marketCap\":271000000000,\"regularMarketChange\":-2.3,\"regularMarketChangePercent\":-1.35}],\"count\":8,\"timestamp\":\"2026-02-23T04:30:37.257Z\"}",
+              "timestamp": 1771821037260
+            }
+          ],
+          "responseSchema": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "string"
+                    },
+                    "displayName": {
+                      "type": "string"
+                    },
+                    "regularMarketPrice": {
+                      "type": "number"
+                    },
+                    "currency": {
+                      "type": "string"
+                    },
+                    "marketCap": {
+                      "type": "number"
+                    },
+                    "regularMarketChange": {
+                      "type": "number"
+                    },
+                    "regularMarketChangePercent": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "count": {
+                "type": "number"
+              },
+              "timestamp": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
